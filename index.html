@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>This is me ~ 私の1日 ~</title>
+</head>
+<body>
+	<header>
+        <h1>This is me ~ 私の1日 ~</h1>
+		<p>このサイトではプログラミングの授業で習得したスキルを活用して、私の1日についてお話しします。</p>
+		<h2>ボックスモデルを体験する</h2>
+			
+		<nav id="menu">
+                <ul>
+                    <li><a href="../3-1/index.html">HOME</a></li>
+                    <li><a href="../3-2/index.html">プロフィール</a></li>
+                    <li><a href="../3-3/index.html">1日のスケジュール</a></li>
+					<li><a href="../3-4/index.html">これからの目標</a></li>
+
+                </ul>
+            </nav>
+    </header>
+
+
+
+
+	
+	<input id="omikuji_btn" type="button" value="おみくじを引く">
+	<script>
+        document.getElementById( "omikuji_btn" ).onclick = function() {
+            var rnd = Math.floor( Math.random() * 6 );
+            var omikuji;
+            if (rnd === 0) omikuji = "大吉";
+            if (rnd === 1) omikuji = "吉";
+            if (rnd === 2) omikuji = "中吉";
+            if (rnd === 3) omikuji = "小吉";
+            if (rnd === 4) omikuji = "末吉";
+            if (rnd === 5) omikuji = "凶";
+            alert(omikuji);
+        }
+    </script>
+    <script>
+        alert("おまけ「おみくじ」があるよ！");
+    </script>
+	<a href="#top">トップに戻る</a>
+
+	<footer>
+		Copyright &copy; Yoshimi Kuroda, All RIghts Reserved.
+	</footer>
+</body>
+</html>
